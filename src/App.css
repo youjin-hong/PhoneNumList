@@ -1,0 +1,234 @@
+main {
+  max-width: 1300px;
+  width: calc(100% - 2rem);
+  margin: auto;
+  display: flex;
+  gap: 2rem;
+}
+
+.title {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bold;
+  padding: 5rem;
+}
+
+/* Input-Con */
+.input-con {
+  border: 1px solid black;
+  width: calc(40% - 2rem);
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 100%;
+}
+.input {
+  width: 100%;
+  display: flex;
+}
+.con {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-1.5rem);
+}
+.input label {
+  display: block;
+  width: 35%;
+}
+.input input {
+  outline: none;
+  padding: 5px;
+  width: 100%;
+}
+.input .group-con {
+  width: 100%;
+  display: flex;
+  transform: translateX(-4px);
+}
+.group-con .group {
+  width: 50%;
+  padding: 5px;
+}
+.group-con .add-group {
+  width: 50%;
+}
+.group {
+  margin-right: 5px;
+  cursor: pointer;
+}
+.add-group {
+  cursor: pointer;
+}
+.save-btn {
+  cursor: pointer;
+  padding: 0.5rem;
+  background-color: rgb(20, 125, 231);
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+.error {
+  color: red;
+  font-size: small;
+}
+
+/* List-Con */
+.list-con {
+  /* border: 1px solid black; */
+  width: calc(50% - 2rem);
+  padding: 0.5rem;
+}
+.search-con {
+  display: flex;
+  gap: 1rem;
+}
+.search-con #search {
+  flex: 1;
+  border: none;
+  background-color: rgb(201, 224, 232);
+  border-radius: 12px;
+  padding: 0 1rem;
+  outline: none;
+}
+.search-con label {
+  display: block;
+  background-color: rgb(20, 125, 231);
+  color: white;
+  padding: 1rem 0.8rem;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.lists {
+  /* border: 1px solid red; */
+  padding: 2rem 1rem;
+}
+.lists .list {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid lightgray;
+  justify-content: flex-start;
+  align-items: center;
+}
+.list .button-con {
+  display: flex;
+  margin-left: auto;
+  justify-content: flex-end;
+}
+.button-con button {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+/* Group Modal */
+.group-modal {
+  position: fixed;
+  background-color: antiquewhite;
+  border-radius: 8px;
+  width: 25%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+}
+
+.group-title {
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+  padding-bottom: 1.5rem;
+}
+.close-btn {
+  position: absolute;
+  top: -2.5rem;
+  left: 45%;
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.group-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+.group-name {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+#new-group {
+  width: 100%;
+  width: 80%;
+  padding: 0.4rem;
+  outline: none;
+}
+#group-label {
+  background-color: lightgray;
+  padding: 0.4rem 0.5rem;
+  margin-left: 8px;
+  cursor: pointer;
+}
+.remove-btn {
+  background-color: transparent;
+  padding: 0.5rem 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* Detail Modal */
+.list-modal {
+  position: fixed;
+  background-color: antiquewhite;
+  border-radius: 8px;
+  width: 25%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+}
+
+.list-title {
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+  padding-bottom: 1.5rem;
+}
+.close-btn {
+  position: absolute;
+  top: -2.5rem;
+  left: 45%;
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.lists-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+.list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (max-width: 1000px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

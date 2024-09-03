@@ -19,7 +19,7 @@ export default function InputCon({ setOpen, group, newList }) {
     const addNewList = { name, phone, selectGroup, detail };
 
     const existData = JSON.parse(localStorage.getItem("listItem")) || [];
-    const updateList = [...existData, addNewList];
+    const updateList = [addNewList, ...existData];
 
     localStorage.setItem("listItem", JSON.stringify(updateList));
 
